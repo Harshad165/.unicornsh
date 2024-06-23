@@ -10,7 +10,7 @@ LASTOUTPUTLINES=${1:-50}
 echo "The last command I executed was (including shell prompt):"
 echo '```'
 # Use tail -r to reverse the lines, grep to find the prompt, and process the output
-tail -r $SCRIPT | grep --max-count=2 -e "^🦄" | tail -n 1
+tail -r $SCRIPT | grep --max-count=2 -e "^🦄" | tail -n 10
 echo '```'
 echo ""
 
